@@ -1,14 +1,8 @@
-x = 5
-step = 2
-count = 2
-print(2, 3, sep='\n')
-while x < 100000:
-    for i in range(3, int(x**0.5) + 1, 2):
-        if not x % i:
-            break
-    else:
-        print(x)
-        count += 1
-    x += step
-    step = 4 if step == 2 else 2
-print(count)
+s1 = "I'm \ta super student."
+print(s1.split())
+print(s1.split('s'))
+print(s1.split('super'))
+print(s1.split('super '))
+print(s1.split(' '))
+print(s1.split('', maxsplit=2))
+print(s1.split('\t', maxsplit=2))
